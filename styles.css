@@ -1,0 +1,276 @@
+/* Importa a fonte Montserrat do Google Fonts */
+@import url("https://fonts.google.com/specimen/Montserrat");
+
+/* Estiliza o corpo da página */
+body {
+  font-family: "Montserrat", serif; /* Define a fonte padrão */
+  background-image: url(/images/wp13938349.jpg); /* Cor de fundo da página */
+  background-size: cover; /* Cobre completamente o elemento e mantém a proporção da imagem*/
+  display: flex; /* Usa Flexbox para layout */
+  flex-direction: column; /* Alinha os itens na vertical */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  justify-content: center; /* Centraliza os itens verticalmente */
+  height: 100vh; /* Preenche a altura total da viewport */
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o padding padrão */
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+  font-size: 2.5rem; /* Tamanho da fonte */
+  font-weight: normal; /* Define o peso(largura) da fonte */
+  color: #f6f6f4; /* Cor do texto */
+  text-align: center; /* Alinha o texto ao centro */
+  letter-spacing: 0.02rem; /* Espaçamento entre letras */
+}
+
+/* Estiliza as seções da página */
+section {
+  display: flex; /* Usa Flexbox para layout */
+  flex-direction: column; /* Alinha os itens na vertical */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+  width: 30rem; /* Largura dos inputs */
+  border: none; /* Remove a borda padrão */
+  padding: 1rem; /* Espaçamento interno */
+  border-radius: 1.5rem; /* Borda arredondada */
+  margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+  color: #45474b; /* Cor do texto */
+  font-size: 1rem; /* Tamanho da fonte */
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+  padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+  border: none; /* Remove a borda padrão */
+  border-radius: 1.5rem; /* Borda arredondada */
+  background-color: #231e1a; /* Cor de fundo do botão */
+  color: #f5f7f8; /* Cor do texto do botão */
+  font-size: 1rem; /* Tamanho da fonte */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+section button:hover {
+  background-color: #45474b; /* Muda a cor de fundo ao passar o mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+  text-align: center; /* Alinhamento do texto */ 
+  color: #f5f7f8; 
+  width: 55rem; /* Largura máxima da caixa de resultados */
+  height: 46vh; /* Altura máxima da caixa de resultados */
+  overflow-y: scroll; /* Adiciona rolagem vertical se necessário */
+  scrollbar-width: none;
+  margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+  padding: 1rem; /* Espaçamento interno */
+  border-radius: 0.6rem; /* Borda arredondada */
+}
+
+/* Oculta a barra de rolagem personalizada em navegadores baseados em Webkit (Chrome ou Safari) */
+.resultados-pesquisa::-webkit-scrollbar {
+  display: none;
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+  display: flex; /* Usa Flexbox para Layout*/
+  justify-content: flex-start; /* Alinha os itens flexíveis ao início do eixo principal*/
+  align-items: flex-start; /* Alinha os itens flexíveis ao início do eixo cruzado*/
+  background: #f6f6f4; /* Cor de fundo dos itens */
+  border-radius: 0.6rem; /* Borda arredondada */
+  padding: 1rem; /* Espaçamento interno */
+  margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Define layout e posicionamento dos elementos*/
+.item-conteudo {
+    display: flex; /* Usa Flexbox para Layout*/
+    flex-direction: column; /* Organiza os itens em uma coluna*/
+    justify-content: flex-start; /* Alinha os itens ao início do eixo principal */
+    align-items: flex-start; /* Alinha os itens ao início do eixo cruzado */
+    margin-left: 1rem; /* Adiciona uma margem à esquerda */
+}
+
+/* Estiliza a capa dos álbuns*/
+.album-cover {
+    border-radius: 1rem; /* Borda arredondada*/
+    width: 15rem; /* Largura da imagem*/
+    height: 15rem; /* Altura da imagem*/
+    object-fit: cover; /* Mantém a porporção da imagem no contêiner*/
+}
+
+/* Estiliza o contêiner dos links dentro do item-resultado */
+.links {
+  display: flex; /* Usa Flexbox para Layout*/
+  flex-direction: column; /* Organiza os itens na vertical */
+  align-items: center; /* Centraliza horizontalmente */
+  margin-top: 1rem; /* Espaçamento acima dos links */
+}
+
+
+/* Estiliza os ícones de streaming*/
+.streaming-links img.icone {
+  height: auto; /* Altura automática para preservar proporção de imagem*/
+  cursor: pointer; /* Mostra que o ícone é clicável*/
+}
+
+
+/* Estiliza o ícone do Spotify*/
+.streaming-links img.icone-spotify {
+  width: 30px; /* Define largura do ícone */
+  margin-top: 2px; /* Adiciona margem no topo*/
+}
+
+/* Estiliza o ícone do Apple Music */
+.streaming-links img.icone-apple {
+  width: 36px; /* Define largura do ícone */
+  margin-top: -4.5px; /* Define uma margem superior negativa*/
+}
+
+/* Estiliza os links de streaming para ficarem na mesma linha */
+.streaming-links {
+  display: flex; /* Usa Flexbox para Layout*/
+  justify-content: center; /* Centraliza horizontalmente */
+  gap: 1rem; /* Espaçamento entre os links */
+  margin-top: 0.5rem; /* Espaçamento acima dos links de streaming */
+}
+
+/* Estilo básico para os ícones */
+.streaming-links a {
+  position: relative;
+  display: inline-block;
+}
+
+/* Estiliza a tooltip */
+.tooltip {
+  font-size: small; /* Tamanho da fonte*/
+  visibility: hidden; /* Inicialmente, a tooltip fica oculta */
+  background-color: #231e1a; /* Cor de fundo da tooltip */
+  color: #fff; /* Cor do texto */
+  text-align: center; /* Alinhamento do texto*/
+  border-radius: 4px; /* Borda arredondada*/
+  padding: 5px; /* Espaçamento interno */
+  position: absolute; /* Posição absoluta em relação ao ícone */
+  z-index: 1; /* Mantém a tooltip acima do ícone */
+  bottom: 100%; /* Posiciona a tooltip acima do ícone */
+  left: 50%; /* Centraliza a tooltip horizontalmente */
+  transform: translateX(-50%); /* Ajusta a posição horizontal */
+  opacity: 0; /*Deixa a tooltip invisível (usado para transição) */
+  transition: opacity 0.3s ease; /* Transição suave para a tooltip */
+  white-space: nowrap; /* Evita que a mensagem quebre em várias linhas */
+}
+
+/* Exibe a tooltip ao passar o mouse no ícone */
+.streaming-links a:hover .tooltip {
+  visibility: visible; /* Exibe a tooltip*/
+  opacity: 1; /* Torna a tooltip visível com a transição*/
+}
+
+/* Estiliza cada link dentro dos resultados */
+.links a {
+  color: #231e1a;
+  text-decoration: none; /* Remove o sublinhado */
+  margin-bottom: 0.5rem; /* Espaçamento entre os links */
+}
+
+/* Adiciona hover para os links */
+.links a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+  font-size: 1.5rem; /* Tamanho da fonte */
+  color: #222831; /* Cor do texto */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  color: #231e1a; /* Cor do texto dos links */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+  text-align: justify;  
+  color: #45474b; /* Cor do texto */
+  margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+
+/* Estiliza o rodapé da página */
+footer {
+  background-color: #231e1a; /* Cor de fundo do rodapé */
+  color: #f6f6f4; /* Cor do texto */
+  text-align: center; /* Alinha o texto ao centro */
+  padding: 0; /* Espaçamento interno */
+  width: 100%; /* Largura total da página */
+  height: 4rem; /* Altura do rodapé*/
+  position: fixed; /* Posiciona o rodapé */
+  bottom: -0.5em; /* Alinha ao fundo da página */
+  font-size: 0.65rem; /* Tamanho da fonte */
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Tamanho da fonte em telas menores */
+    letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
+  }
+
+  section input {
+    width: 25rem; /* Largura dos inputs em telas menores */
+    padding: 0.8rem; /* Espaçamento interno em telas menores */
+  }
+
+  .resultados-pesquisa {
+    width: 40rem; /* Largura da caixa de resultados em telas menores */
+    height: 40vh; /* Altura da caixa de resultados em telas menores */
+  }
+
+  .item-resultado h2 {
+    font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
+  }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
+    letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+  }
+
+  section input {
+    width: 17rem; /* Largura total dos inputs em telas pequenas */
+  }
+
+  section button {
+    padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
+    font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+  }
+
+  .resultados-pesquisa {
+    width: 90%; /* Largura da caixa de resultados em telas pequenas */
+    height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+  }
+
+  .item-resultado h2 {
+    font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+  }
+
+  footer {
+    font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+  }
+}
