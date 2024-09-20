@@ -107,7 +107,7 @@ let dados = [
     info: "https://pt.wikipedia.org/wiki/The_Tortured_Poets_Department",
     spotify: "https://open.spotify.com/intl-pt/album/5H7ixXZfsNMGbIE5OBSpcb?si=gUIvsdVhSgOy5ceEaBWTmQ",
     apple: "https://music.apple.com/us/album/the-tortured-poets-department-the-anthology/1742057774",
-    tags:"fortnight (feat. post malone) the tortured poets department my boy only breaks his favorite toys down bad so long london but daddy i love him fresh out the slammer florida!!! (feat. florence + the machine) guilty as sin? who's whos afraid of little old me? i can fix him (no really i can) loml i can do it with a broken heart the smallest man who ever lived the alchemy clara bow stevie nicks matty healy the black dog imgonnagetyouback im gonna get you back the albatross chloe or sam or sophia or marcus how did it end? so high school i hate it here thank you aimee i look in people's peoples windows the prophecy cassandra peter the bolter robin the manuscript ttpd"
+    tags:"fortnight (feat. post malone) the tortured poets department my boy only breaks his favorite toys down bad so long london but daddy i love him fresh out the slammer florida!!! (feat. florence + the machine) guilty as sin? who's whos afraid of little old me? i can fix him (no really i can) loml i can do it with a broken heart the smallest man who ever lived the alchemy clara bow stevie nicks matty healy the black dog imgonnagetyouback im gonna get you back the albatross chloe or sam or sophia or marcus how did it end? so high school i hate it here thank you aimee i look in people's peoples windows the prophecy cassandra peter the bolter robin the manuscript ttpd travis kelce"
   },
 
 ];
